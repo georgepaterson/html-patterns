@@ -6,6 +6,8 @@ HTML5 design patterns for common modules.
 
 ## Page base
 
+The basic structure of a HTML page. Language and text direction has been defined, it has a head tag with a title and meta character setting, the body tag is empty. 
+
 	<!DOCTYPE html>
 	<html lang="en-GB" dir="ltr">
 		<head>
@@ -15,6 +17,8 @@ HTML5 design patterns for common modules.
 		<body>
 		</body>
 	</html>
+	
+The basic page structure with the addition of conditional comments setting Internet Explorer version specific classnames.
 	
 	<!DOCTYPE html>
 	<!--[if IE 8]><html class="ie8" lang="en-GB" dir="ltr"><![endif]-->
@@ -30,10 +34,12 @@ HTML5 design patterns for common modules.
 	
 ## Search
 
-	<form action="# id="quick-search" role="search">
-		<label class="accessible" for="quick-search-input">Search</label>
-		<input id="quick-search-input" name="quick-search-input" placeholder="Search this site" type="search" />
-		<input id="quick-search-submit" name="quick-search-submit" type="submit" value="Submit" />
+A simple search form, one that would commonly be found on as part of the header on most pages. 
+
+	<form action="# id="search" role="search">
+		<label class="accessible" for="search-input">Search</label>
+		<input id="search-input" name="search-input" placeholder="Search this site" type="search" />
+		<input id="search-submit" name="search-submit" type="submit" value="Submit" />
 	</form>
 
 ## Page header
