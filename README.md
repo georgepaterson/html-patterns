@@ -12,7 +12,7 @@ The basic structure of a HTML page. Language and text direction has been defined
 	<html lang="en-GB" dir="ltr">
 		<head>
 			<title>Page unique title</title>
-			<meta charset="utf-8">
+			<meta charset="utf-8" />
 		</head>
 		<body>
 		</body>
@@ -26,7 +26,7 @@ The basic page structure with the addition of conditional comments setting Inter
 	<!--[if !IE]><!--><html lang="en-GB" dir="ltr"><!--<![endif]-->
 		<head>
 			<title>Page unique title</title>
-			<meta charset="utf-8">
+			<meta charset="utf-8" />
 		</head>
 		<body>
 		</body>
@@ -36,16 +36,45 @@ The basic page structure with the addition of conditional comments setting Inter
 
 A simple search form, one that would commonly be found on as part of the header on most pages. 
 
-	<form action="# id="search" role="search">
-		<label class="accessible" for="search-input">Search</label>
-		<input id="search-input" name="search-input" placeholder="Search this site" type="search" />
-		<input id="search-submit" name="search-submit" type="submit" value="Submit" />
+	<form action="#" id="quick-search" role="search">
+		<fieldset>
+			<legend class="accessible">Quick search</legend>
+			<label class="accessible" for="quick-search-input">Search</label>
+			<input id="quick-search-input" name="quick-search-input" placeholder="Search this site" type="search" />
+			<input id="quick-search-submit" name="quick-search-submit" type="submit" value="Submit" />
+		</fieldset>
 	</form>
 
 ## Page header
 
 	<header id="header" role="banner">
-	
+		<p id="skip" class="accessible"><a href="#main">Skip to content</a></p>
+		<div id="branding">
+			<h1 class="accessible">Example site heading</h1>
+			<a href="#"><img src="/images/brand-logo.png" alt="Brand logo description"></a>					
+		</div>
+		<nav id="navigation" role="navigation">
+			<h2 class="accessible">Site navigation</h2>
+			<ul class="navigation-menu">
+				<li><a class="selected" href="#">Site section</a></li>
+				<li><a href="#">Site section</a>
+					<ul class="navigation-submenu">
+						<li><a href="#">Site sub-section</a></li>
+						<li><a href="#">Site sub-section</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Site section</a></li>
+				<li><a href="#">Site section</a></li>
+			</ul>
+		</nav>
+		<form action="#" id="quick-search" role="search">
+			<fieldset>
+				<legend class="accessible">Quick search</legend>
+				<label class="accessible" for="quick-search-input">Search</label>
+				<input id="quick-search-input" name="quick-search-input" placeholder="Search this site" type="search" />
+				<input id="quick-search-submit" name="quick-search-submit" type="submit" value="Submit" />
+			</fieldset>
+		</form>
 	</header>
 	
 ## Article
