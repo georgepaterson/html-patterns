@@ -233,7 +233,7 @@ A simple search form, one that would commonly be found on as part of the header 
 			<li><a href="#">Contact us</a></li>
 			<li>Copyright &copy; 2012</li>
 		</ul>
-	</div>
+	</footer>
 	
 	<footer id="footer" role="contentinfo">
 		<section id="colophon">
@@ -244,7 +244,7 @@ A simple search form, one that would commonly be found on as part of the header 
 				<li>Copyright &copy; 2012</li>
 			</ul>
 		</section>
-	</div>
+	</footer>
 	
 	<footer id="footer" role="contentinfo">
 		<div id="colophon">
@@ -255,4 +255,4 @@ A simple search form, one that would commonly be found on as part of the header 
 				<li>Copyright &copy; 2012</li>
 			</ul>
 		</div>
-	</div>
+	</footer>
